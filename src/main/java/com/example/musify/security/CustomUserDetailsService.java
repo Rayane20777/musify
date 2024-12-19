@@ -1,7 +1,6 @@
 package com.example.musify.security;
 
 import com.example.musify.repository.UserRepository;
-import com.example.musify.service.UserService;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
