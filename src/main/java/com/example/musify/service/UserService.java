@@ -37,7 +37,7 @@ public class UserService {
                 signUpRequest.getEmail(),
                 passwordEncoder.encode(signUpRequest.getPassword()));
 
-        user.setRoles(Collections.singletonList(Role.USER));
+        user.setRoles(Collections.singletonList(Role.ROLE_USER));
         return userRepository.save(user);
     }
 
