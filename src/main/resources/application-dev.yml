@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/musify_dev
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    com.musify: DEBUG
+
+# Development-specific configurations
+app:
+  cors:
+    allowed-origins: http://localhost:3000
+  swagger:
+    enabled: true
+

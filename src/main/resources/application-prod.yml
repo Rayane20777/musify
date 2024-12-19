@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOST}:${MONGO_PORT}/musify_prod
+
+logging:
+  level:
+    org.springframework.security: WARN
+    com.musify: INFO
+
+# Production-specific configurations
+app:
+  cors:
+    allowed-origins: https://musify.com
+  swagger:
+    enabled: false
